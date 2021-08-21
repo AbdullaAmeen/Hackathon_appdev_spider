@@ -202,7 +202,7 @@ public class GameView extends SurfaceView {
     }
 
     public void drawGameOverMenu(Canvas canvas) {
-        if(getDataInt()>timePassed)
+        if(getDataInt()<timePassed)
             saveDataInt(timePassed);
 
         if(canvas != null){
